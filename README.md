@@ -1,1 +1,1 @@
-test
+The intention of this repository is to be the new website that hosts my portfolio projects.
