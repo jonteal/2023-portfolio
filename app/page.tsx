@@ -13,37 +13,37 @@ export const projects = [
     id: 1,
     name: 'Ozark AirBnb',
     main_image: '',
-    slug: '1'
+    slug: 'ozark-airbnb'
   },
   {
     id: 2,
     name: 'Open Table Clone',
-    main_image: '',
-    slug: '2'
+    main_image: 'open-table.png',
+    slug: 'open-table-clone'
   },
   {
     id: 3,
     name: 'Java Bar Coffee',
     main_image: '',
-    slug: '3'
+    slug: 'java-bar-coffee'
   },
   {
     id: 4,
     name: 'Jonteal - Artist Page',
     main_image: '',
-    slug: '4'
+    slug: 'jonteal-artist-page'
   },
   {
     id: 5,
     name: 'Study Buddy',
     main_image: '',
-    slug: '5'
+    slug: 'study-buddy'
   },
   {
     id: 6,
     name: 'American Bistro',
     main_image: '',
-    slug: '6'
+    slug: 'american-bistro'
   }
 ]
 

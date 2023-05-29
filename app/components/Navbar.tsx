@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between h-15 bg-gradient-to-r from-[#2d4b97] to-[#217066] p-2 border">
+    <nav className="flex justify-between h-15 bg-gradient-to-r from-[#2d4b97] to-[#217066] p-2">
       <Link className="font-bold text-white text-2xl" href="/">
         Home
       </Link>

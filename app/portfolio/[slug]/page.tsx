@@ -1,8 +1,13 @@
+import { ProjectCardType } from "@/app/page"
 
-const ProjectDetails = () => {
+export type ProjectDetailsProps = {
+  project: ProjectCardType
+}
+
+const ProjectDetails = ({ project}: ProjectDetailsProps) => {
   return (
     <div>
-      <h1>Project Name</h1>
+      <h1>{project.name}</h1>
     </div>
   )
 }
