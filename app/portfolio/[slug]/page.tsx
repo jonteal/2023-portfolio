@@ -1,8 +1,10 @@
 
-const Project = () => {
+const ProjectDetails = () => {
   return (
-    <div>page</div>
+    <div>
+      <h1>Project Name</h1>
+    </div>
   )
 }
 
-export default Project
+export default ProjectDetails
