@@ -14,7 +14,7 @@ const Navbar = () => {
           About
         </Link>
         <Link
-          className="text-white bg-black text-1xl border rounded pl-3 pr-3 pb-1 pt-1"
+          className="text-white bg-gray-800 text-1xl border rounded pl-3 pr-3 pb-1 pt-1"
           href="/contact"
         >
           Contact
