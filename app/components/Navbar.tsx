@@ -4,17 +4,26 @@ const Navbar = () => {
   return (
     <div className="flex justify-center">
       <nav className="pl-5 pr-5 flex justify-between items-center h-15 bg-white p-3 w-4/12">
-        <Link className="text-black text-1xl" href="/">
+        <Link
+          className="transform transition duration-500 hover:scale-110 hover:bg-cyan-700 flex justify-center items-center hover:text-gray-100 text-1xl rounded pl-3 pr-3 pb-1 pt-1"
+          href="/"
+        >
           Home
         </Link>
-        <Link className="text-black text-1xl" href="/works">
+        <Link
+          className="transform transition duration-500 hover:scale-110 hover:bg-cyan-700 flex justify-center items-center hover:text-gray-100 text-1xl rounded pl-3 pr-3 pb-1 pt-1"
+          href="/works"
+        >
           Works
         </Link>
-        <Link className="text-black text-1xl" href="/about">
+        <Link
+          className="transform transition duration-500 hover:scale-110 hover:bg-cyan-700 flex justify-center items-center hover:text-gray-100 text-1xl rounded pl-3 pr-3 pb-1 pt-1"
+          href="/about"
+        >
           About
         </Link>
         <Link
-          className="text-white bg-gray-800 text-1xl border rounded pl-3 pr-3 pb-1 pt-1"
+          className="transform transition duration-500 hover:scale-110 hover:bg-cyan-700 flex justify-center items-center hover:text-gray-100 text-1xl rounded pl-3 pr-3 pb-1 pt-1"
           href="/contact"
         >
           Contact

@@ -1,11 +1,9 @@
-import React from "react";
-import Header from "../components/Header";
 import ProjectCard from "../components/ProjectCard";
 
 export const projects = [
   {
     id: 1,
-    name: "Ozark AirBnb",
+    name: "Ozark Airbnb",
     main_image: "/images/ozark-airbnb.png",
     slug: "ozark-airbnb",
     description: "A sleek and modern reservation site for an Airbnb company.",

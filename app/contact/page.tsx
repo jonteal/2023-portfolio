@@ -1,102 +1,95 @@
-'use client';
-// import PhoneIcon from "../../Images/white-phone-icon.png";
-// import LocationIcon from "../../Images/white-location-icon.png";
-// import EmailIcon from "../../Images/email-icon.png";
-import { useContext, useRef, useState } from "react";
+"use client";
+import { useRef, useState } from "react";
 // import emailjs from "emailjs-com";
-// import { ThemeContext } from "../../context";
 
 const ContactPage = () => {
-
   const formRef = useRef();
   const [done, setDone] = useState(false);
-  // const theme = useContext(ThemeContext);
-  // const darkMode = theme.state.darkMode;
 
-      // handleSubmit using emailjs 
-    //   const handleSubmit = (e) => {
-    //     e.preventDefault()
-    //     emailjs.sendForm(
+  // handleSubmit using emailjs
+  //   const handleSubmit = (e) => {
+  //     e.preventDefault()
+  //     emailjs.sendForm(
 
-    //     'service_my20arp', 
-    //     'template_j7zva5b', 
-    //     formRef.current, 
-    //     'user_gA8QSmOG7ld5EfHWWmsof'
-    //     )
+  //     'service_my20arp',
+  //     'template_j7zva5b',
+  //     formRef.current,
+  //     'user_gA8QSmOG7ld5EfHWWmsof'
+  //     )
 
-    //     .then((result) => {
-    //         console.log(result.text);
-    //         setDone(true);
-    //         formRef.current.reset();
+  //     .then((result) => {
+  //         console.log(result.text);
+  //         setDone(true);
+  //         formRef.current.reset();
 
-    //     }, (error) => {
-    //         console.log(error.text);
-    //     });
-    // }
+  //     }, (error) => {
+  //         console.log(error.text);
+  //     });
+  // }
   return (
-    <div className="contact" id="contact-me-section">
-            <div className="contact-bg"></div>
-            <div  className="contact-wrapper">
-                <div className="contact-left">
-                    <h1 className="contact-title">Contact me!</h1>
+    <div className="flex flex-row w-screen justify-center mt-10">
+      <div className="border w-6/12 m-3 rounded-xl bg-gray-800 p-9">
+        <p className="text-gray-100 italic">Contact Me</p>
+        <h2 className="text-gray-100 text-6xl">
+          Let's work together <span className="font-thin">&</span> make your
+          website turn visitors into engaged customers
+        </h2>
+        <p className="text-gray-100">jonjackson.webdesign@gmail.com</p>
+      </div>
 
-                    {/* Contact information */}
-                    <div className="contact-info">
-                        <div className="contact-info-item">
-                            {/* <img
-                                src={PhoneIcon}
-                                alt="Phone icon"
-                                className="contact-icon"
-                            /> */}
-                            +1 (479) 601-3157
-                        </div>
-                        <div className="contact-info-item">
-                            {/* <img
-                                src={EmailIcon}
-                                alt="Email icon"
-                                className="contact-icon"
-                            /> */}
-                            jonjackson.webdesign@gmail.com
-                        </div>
-                        <div className="contact-info-item">
-                            {/* <img
-                                src={LocationIcon}
-                                alt="Location icon"
-                                className="contact-icon"
-                            /> */}
-                            Fayetteville, AR
-                        </div>
-                    </div>
-                </div>
-                <div className="contact-right">
-                    <p className="contact-desc">
-                        <b>How can I help?</b> Reach out to me if you want to discuss a role, project 
-                        you're working on, or if you just want to say hello and connect! 
-                        I look forward to hearing from you!
-                    </p>
+      <div className="border w-6/12 m-3 rounded-xl" id="contact-me-section">
+        <div className="p-9">
+          <div className="flex flex-row justify-between">
+            <p className="text-gray-800 mb-8">
+              <span className="font-bold text-2xl">Jon</span>{" "}
+              <span className="italic text-2xl">Jackson</span>
+            </p>
+            <p>2023</p>
+          </div>
+          <form
+            // ref={formRef}
+            // onSubmit={handleSubmit}
+            className="flex flex-col"
+          >
+            <label className="text-2xl font-light" htmlFor="name">
+              Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              className="border p-3 mt-3 mb-5 rounded-md"
+            />
 
-                    {/* Form to reach out via email */}
-                    <form 
-                    // ref={formRef} 
-                    // onSubmit={handleSubmit}
-                    >
-                        <input type="text" placeholder="Name" name="user_name" />
-                        <input type="text" placeholder="Subject" name="user_subject" />
-                        <input type="text" placeholder="Email" name="user_email" />
-                        <textarea placeholder="Message" name="message" />
-                        <button>Submit</button>
-                        {done && "Thank you for your message!"}
-                    </form>
-                </div>
-            </div>
+            <label className="text-2xl font-light" htmlFor="">
+              Email Address
+            </label>
+            <input
+              type="text"
+              name="user_email"
+              placeholder="Enter your email"
+              className="border p-3 mt-3 mb-5 rounded-md"
+            />
+
+            <label className="text-2xl font-light" htmlFor="">
+              Message
+            </label>
+            <textarea
+              name="message"
+              placeholder="Enter your message"
+              className="border p-3 mt-3 mb-5 rounded-md"
+            />
+
+            <button className="transform transition duration-500 hover:scale-110 hover:bg-cyan-700 flex justify-center items-center border w-36 mb-5 bg-gray-800 text-gray-100 rounded-md py-5">
+              Send an email
+            </button>
+
+            {done && "Thank you for your message!"}
+          </form>
         </div>
-  )
-}
+      </div>
+    </div>
+  );
+};
 
-export default ContactPage
-
-
-
-
-
-
+export default ContactPage;
