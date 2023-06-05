@@ -58,7 +58,7 @@ const ContactPage = () => {
               type="text"
               name="name"
               placeholder="Enter your name"
-              className="border p-3 mt-3 mb-5 rounded-md"
+              className="border p-3 mt-2 mb-5 rounded-md"
             />
 
             <label className="text-2xl font-light" htmlFor="">
@@ -68,7 +68,7 @@ const ContactPage = () => {
               type="text"
               name="user_email"
               placeholder="Enter your email"
-              className="border p-3 mt-3 mb-5 rounded-md"
+              className="border p-3 mt-2 mb-5 rounded-md"
             />
 
             <label className="text-2xl font-light" htmlFor="">
@@ -77,7 +77,7 @@ const ContactPage = () => {
             <textarea
               name="message"
               placeholder="Enter your message"
-              className="border p-3 mt-3 mb-5 rounded-md"
+              className="border p-3 mt-2 mb-5 rounded-md"
             />
 
             <button className="transform transition duration-500 hover:scale-110 hover:bg-cyan-700 flex justify-center items-center border w-36 mb-5 bg-gray-800 text-gray-100 rounded-md py-5">

@@ -1,5 +1,5 @@
 import { PrismaClient } from "@prisma/client";
-import me from '../public/images/me.jpeg';
+import plants from '../public/images/me.jpeg';
 
 export type ProjectCardType = {
   id: number;
@@ -37,7 +37,10 @@ const Home = async () => {
           <h1 className="text-8xl font-light text-black">Jon Jackson</h1>
           <h2 className="text-black font-light text-7xl mb-2">Web Designer</h2>
         </div>
-        {/* <img className="w-6/12" src='/images/me.jpeg' alt="" /> */}
+        <div className="w-screen h-60">
+
+        <img className="w-screen" src='/images/plants.jpeg' alt="" />
+        </div>
       </div>
     </main>
   );
